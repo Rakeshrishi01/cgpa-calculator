@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+h2.text {
+    filter: drop-shadow(-3px -3px 2px rgba(231, 231, 231, 0.3))
+            drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+input {
+    margin-right: 20px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 255, 174);
+}
+input:focus {
+    box-shadow: 0 0 5px rgb(111, 255, 210);
+}
+button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: white;
+    background: rgb(255, 0, 89);
+    border: 2px solid rgb(255, 0, 89);
+    box-shadow: 5px 5px 10px rgba(222, 20, 74, 0.4);
+    transition: background 0.8s ease;
+}
+button:hover {
+    background: transparent;
+    color: rgb(255, 0, 89);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about {
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 500px;
+    background: rgb(255, 255, 255);
+    box-shadow: -3px -3px 2px rgba(255,255,255, 0.3),
+                5px 5px 5px rgba(0,0,0,0.2),
+                15px 15px 15px rgba(0,0,0,0.2);
+}
+p {
+    margin: 4%;
+}
+.about span {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.arrow-container button {
+    font-size: 1rem;
+    background: rgb(0, 110, 255);
+    border: 2px solid rgb(0, 110, 255);
+    box-shadow: 5px 2px 10px rgb(0, 110, 255,0.4);
+    width: 200px;
+}
+.arrow-container button:hover {
+    background: transparent;
+    color: rgb(0, 110, 255);
+}
+.fa-arrow-down {
+    margin-left: 5px;
+    font-size: 24px; 
+}
+  
+.option-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#gpBtn {
+    padding: 6px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#cgBtn {
+    padding: 6px 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.tab-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+table {
+    margin: 2%;
+    display: block;
+    border-collapse: collapse;
+}
+td,th {
+    color: white;
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    border: 2px solid rgb(203, 255, 243);
+}
+th {
+    background: rgb(0, 255, 174);
+}
+td {
+    background: rgb(35, 190, 148);
+}
+.btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#calculateBtn {
+    text-align: center;
+    color: white;
+}
+#calculateBtn:hover {
+   color: rgb(255, 0, 89);
+}
+
+.cgpa-container {
+    text-align: center;
+    margin-top: 20px;
+}
+#calculateCgpa {
+    margin-top: 10px;
+}
+#cgpa-display {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: rgb(30, 213, 30);
+}
+
+@media (max-width:790px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .option-container {
+        align-items: center;
+        justify-content: center;
+    }
+    .about {
+        margin-left: 15%;
+        font-size: 1.5rem;
+        width: 350px;
+    }
+    
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Cgpa Calculator</title>
+</head>
+<body>
+
+  <h2 class="text"><span>CGPA</span> Calculator</h2>
+
+  <div class="option-container">
+    <button id="gpBtn">GPA</button>
+    <button id="cgBtn">CGPA</button>
+  </div>
+
+  <div class="centered">
+    <div class="about">
+    <p><span>Welcome</span> to our cgpa calculator website. First choose any one (CGPA or GPA) of the option mentioned in above. Just put your grade point for each and every subject then click the calculate CGPA button you will get the result.</p>
+    </div>
+  </div>
+  
+  <div class="arrow-container">
+    <button id="see-here">See here <i class="fas fa-arrow-down"></i></button>
+  </div>
+
+  <div id="scrollSection">
+  <!-- GPA Calculator -->
+  <div class="gpa-container" style="display: none;"> 
+    <div class="details">
+      <input type="text" name="input" id="grade" placeholder="Enter your grade point" required>
+      <input type="text" name="input" id="credit" placeholder="Enter your course credit" required><br><br>
+      <button id="addBtn">Add</button>
+    </div>
+    
+    <div class="tab-cont">
+    <table>
+      <thead>
+        <tr>
+          <th>Grade Point</th>
+            <th>Credit</th> 
+            <th>Mark</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+    </div>
+
+    <div class="btn-cont">
+      <button id="calculateBtn">Calculate GPA</button>
+    </div>   
+  </div>
+
+  <!-- CGPA Calculator -->
+  
+  <div class="cgpa-container" style="display: none;">
+    <input type="text" id="sem1" name="sem1" placeholder="Enter your 1st sem GPA"><br>
+    <input type="text" id="sem2" name="sem2" placeholder="Enter your 2nd sem GPA"><br>
+    <div id="cgpa-display"> </div>
+    <button id="calculateCgpa">Calculate CGPA</button>
+  </div>
+  </div>
+     
+</body>
+</html>
